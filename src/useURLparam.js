@@ -2,8 +2,8 @@ import { useParams } from "react-router-dom"
 
 
 function useURLparam() {
-  const {values} = useParams()
-  return values
+  const {testing1} = useParams()
+  return testing1
 }
 
 export default useURLparam

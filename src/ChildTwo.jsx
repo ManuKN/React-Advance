@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom"
 import useURLparam from "./useURLparam"
 
 function ChildTwo() {
-    const values = useURLparam()
+    const values2 = useURLparam()
+    const navigate = useNavigate()
   return (
     <div>
-        <button onClick={() =>(console.log({values}))}>ChildRoute 2</button>
+       <h2>{values2}</h2>
+    <button onClick={() => navigate('/App')}>Go Back2</button>
     </div>
   )
 }

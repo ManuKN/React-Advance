@@ -24,7 +24,7 @@ function App() {
     <Route path= '/App' element={<AppLayout />}>
        <Route index element={<MainContent />}/>
        <Route path='/App/:testing1' element={<Childone />} />
-       <Route path='/App/:testing2' element={<ChildTwo />} />
+       <Route path='/App/:testing1/:testing2' element={<ChildTwo />} />
     </Route>
   </Routes>
   </Suspense>
