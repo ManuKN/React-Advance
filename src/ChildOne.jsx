@@ -7,7 +7,7 @@ function Childone() {
     console.log(values);
   return(
     <div>
-       <h2>{values}</h2>
+       <h2>Params 1:{values}</h2>
     <button onClick={() => navigate('/App')}>Go Back1</button>
     </div>
   )

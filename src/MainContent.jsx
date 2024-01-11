@@ -22,8 +22,8 @@ function MainContent() {
         {/* <Childone />
         <ChildTwo /> */}
         <ul>
-         <li><Link to='/App/:testing1'>ChildOne</Link></li>
-         <li><Link to='/App/:testing1/:testing2'>ChildTwo</Link></li>
+         <li><Link to='/App/testing1'>ChildOne</Link></li>
+         <li><Link to='/App/testing1/testing2'>ChildTwo</Link></li>
          </ul>
         <User />   
     </div>
