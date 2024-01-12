@@ -12,8 +12,8 @@ function Authuntication({ children }) {
     children: PropTypes.node.isRequired,
   };
   const dispatch = useDispatch();
-  const { user, isAuthenticated , username } = useSelector((state) => state.user);
-
+  const { user, isAuthenticated , username , amount , currency , error } = useSelector((state) => state.user);
+ console.log(amount)
   const handleLogin = (email, password) => {
     const dummyUser = {
       email: "Manu@example.com",
@@ -40,7 +40,7 @@ function Authuntication({ children }) {
   }
 
   return (
-    <AuthContext.Provider value={{ user, isAuthenticated, username , login: handleLogin, logout: handleLogout , FirstName:handleName }}>
+    <AuthContext.Provider value={{ user, isAuthenticated, username , amount , currency , error , login: handleLogin, logout: handleLogout , FirstName:handleName }}>
       {children}
     </AuthContext.Provider>
   );

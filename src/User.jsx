@@ -11,6 +11,7 @@ import { useSelector } from "react-redux";
 
 function User() {
   const data  = useSelector((state) => state.user)
+  console.log(data)
     const{logout} = useAuth()
     //const user = FAKE_USER;
   const navigate = useNavigate()
@@ -23,6 +24,7 @@ function User() {
     <div className="Logout">
       <span>Welcome, {data.username}</span>
       <button onClick={handleClick}>Logout</button>
+      {/* <h3>Your Converted Currencuy IS:{amount}</h3> */}
     </div>
   )
 }
